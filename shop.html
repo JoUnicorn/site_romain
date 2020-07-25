@@ -60,7 +60,7 @@ div {
       <a href="#" class="w3-bar-item" style="cursor:context-menu;text-decoration: none;">FILTER</a>
       <div class="w3-dropdown-hover">
         <button class="w3-button">BRAND <i class="fa fa-caret-down"></i></button>
-        <div id="demo2" class="w3-dropdown-content w3-bar-block w3-card">
+        <div id="brand" class="w3-dropdown-content w3-bar-block w3-card">
           <input class="w3-check" type="checkbox" checked="checked">
           <label>Truc</label></p>
           <p>
@@ -72,10 +72,40 @@ div {
         </div>
       </div>
       <div class="w3-dropdown-click">
-        <button class="w3-button" onclick="myFunction()">
+        <button class="w3-button" onclick="brand_fct()">
           PERIOD <i class="fa fa-caret-down"></i>
         </button>
-        <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <div id="period" class="w3-dropdown-content w3-bar-block w3-card">
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label>Truc</label></p>
+          <p>
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label> machin</label></p>
+          <p>
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label>encore truc</label></p>
+        </div>
+      </div>
+      <div class="w3-dropdown-click">
+        <button class="w3-button" onclick="ccolor_fct()">
+          CAR COLOR <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="ccolor" class="w3-dropdown-content w3-bar-block w3-card">
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label>Truc</label></p>
+          <p>
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label> machin</label></p>
+          <p>
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label>encore truc</label></p>
+        </div>
+      </div>
+      <div class="w3-dropdown-click">
+        <button class="w3-button" onclick="bcolor_fct()">
+          BACKGROUND COLOR <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="bcolor" class="w3-dropdown-content w3-bar-block w3-card">
           <input class="w3-check" type="checkbox" checked="checked">
           <label>Truc</label></p>
           <p>
@@ -190,14 +220,32 @@ function toggleFunction() {
     }
 }
 
-function myFunction() {
-  var x = document.getElementById("demo");
+function brand_fct() {
+  var x = document.getElementById("brand");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+function ccolor_fct() {
+  var x = document.getElementById("ccolor");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function bcolor_fct() {
+  var x = document.getElementById("bcolor");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
 </script>
 
 </body>
