@@ -72,7 +72,7 @@ div {
         </div>
       </div>
       <div class="w3-dropdown-click">
-        <button class="w3-button" onclick="brand_fct()">
+        <button class="w3-button" onclick="period_fct()">
           PERIOD <i class="fa fa-caret-down"></i>
         </button>
         <div id="period" class="w3-dropdown-content w3-bar-block w3-card">
@@ -220,8 +220,8 @@ function toggleFunction() {
     }
 }
 
-function brand_fct() {
-  var x = document.getElementById("brand");
+function period_fct() {
+  var x = document.getElementById("period");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
