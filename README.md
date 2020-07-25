@@ -11,3 +11,5 @@
 3) quelle font pour le text (google lato pour le moment)
 
 4) rien pour le home
+
+5) besoind d une base de donnees
